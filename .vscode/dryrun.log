@@ -1,0 +1,7 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/workspace/CQRS'
+echo "Starting the Project on Docker..."
+mkdir -p .docker-data
+docker-compose up -d postgres hasura adminer
+make: Leaving directory '/workspace/CQRS'
+ 
